@@ -1,0 +1,39 @@
+@import "../var.less";
+.main__trust {
+   padding: 80px 0;
+   .trust__container {
+      .trust__title {
+         .title();
+         margin-bottom: 76px;
+      }
+      .trust__content {
+         display: flex;
+         align-items: flex-start;
+         justify-content: center;
+         gap: 39px;
+         .trust__item {
+            flex: 0 1 313px;
+            text-align: center;
+            &>*:not(:last-child) {
+               margin-bottom: 19px;
+            }
+            .trust__item-img {
+               img {}
+            }
+            .trust__item-title {
+               font-family: @font1;
+               .font(24px,29px,#1B3764,0em)
+            }
+            .trust__item-subTitle {
+               font-family: @font2;
+               .font(19px,29px,#969AA0,0em);
+            }
+         }
+      }
+   }
+}
+
+
+
+
+

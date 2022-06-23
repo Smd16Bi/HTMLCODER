@@ -1,0 +1,114 @@
+@import "../var.less";
+
+.main__welcome {
+   background: #1B3764;
+   padding: 200px 0 100px 0;
+   .welcome__container {
+      display: flex;
+      align-items: flex-start;
+      .welcome__intro {
+         flex: 1 1 50%;
+         padding-top: 160px;
+         padding-left: 7px;
+         .intro__text {
+            .intro__text-subTitle {
+               font-family: @font1;
+               text-align: left;
+               .font(21px, 36px, #ffffff, 1.2px);
+               display: flex;
+               align-items: center;
+               margin-bottom: 10px;
+               span {
+                  display: inline-block;
+                  width: 35px;
+                  height: 2px;
+                  background: #FFCA42;
+                  margin-right: 14px;
+               };
+            }
+
+            .intro__text-title {
+               font-family: @font1;
+               text-align: left;
+               .font(64px, 78px, #ffffff, 1.29px);
+               margin-bottom: 24px;
+            }
+
+            .intro__text-text {
+               font-family: @font2;
+               .font(18px, 29px, #B4C7E7, 0em);
+               max-width: 562px;
+            }
+         }
+
+         .intro__buttons {
+            margin-top: 42px;
+            margin-bottom: 47px;
+            display: flex;
+            align-items: center;
+            &>*:not(:last-child) {
+               margin-right: 51px;
+            }
+            .button__left {
+               .btns();
+            }
+
+            .button__right {
+               .btn-link {
+                  display: inline-block;
+                  width: 152px;
+                  font-family: @font1;
+                  .font(19px,30px,#ffffff, 0.38px);
+                  border-bottom: 1px solid #FFFFFF;
+               }
+            }
+         }
+
+         .intro__para {
+            display: flex;
+            align-items: center;
+            &>*:not(:last-child) {
+               margin-right: 72px;
+            }
+            .para__item {
+               font-family: @font1;
+               .font(24px,29px,#ffffff, 0.48px);
+               position: relative;
+               &:nth-child(1)::before,
+               &:nth-child(2)::before,
+               &:nth-child(3)::before {
+                  position: absolute;
+                  bottom: -38px;
+                  left: 25px;
+                  font-family: @font2;
+                  .font(17px,27px,#B4C7E7, 0em);
+               }
+               &:nth-child(1)::before {
+                  content: "250pages";
+               }
+               &:nth-child(2)::before{
+                  content: "10 Hours";
+                  font-family: @font2;
+               }
+               &:nth-child(3)::before{
+                  content: "4.5/5 (305 ratings)";
+                  width: 156px;
+               }
+               span {
+                  display: inline-block;
+                  background: #FFCA42;
+                  width: 16px;
+                  height: 16px;
+                  border-radius: 50%;
+                  margin-right: 10px;
+               }
+            }
+         }
+      }
+
+      .welcome__decor {
+         flex: 1 1 50%;
+         padding-left: 36px;
+      }
+   }
+}

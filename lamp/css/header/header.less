@@ -1,0 +1,93 @@
+@import "../var.less";
+
+.header {
+   position: absolute;
+   width: 100%;
+
+   .header__container {
+      display: flex;
+      align-items: center;
+      height: 109px;
+      padding: 0;
+
+      .header__logo {
+         height: 35px;
+         width: 119px;
+         margin-right: 37.59px;
+      }
+
+      .header__socials {
+         display: flex;
+         align-items: center;
+         margin-right: 260px;
+         &>*:not(:last-child) {
+            margin-right: 10px;
+         }
+         .social-icon {
+            display: block;
+            text-align: center;
+            width: 45px;
+            height: 45px;
+            line-height: 45px;
+            background-color: #fff;
+         }
+      }
+
+      .header__nav {
+         .nav__list {
+            display: flex;
+            
+            .nav__item {
+               &:nth-child(1){
+                  margin-right: 47px;
+               }
+               &:nth-child(2){
+                  margin-right: 48px;
+               }
+               &:nth-child(3){
+                  margin-right: 60px;
+               }
+               &:nth-child(4){
+                  margin-right: 39px;
+               }
+               &:nth-child(5){
+                  margin-right: 55px;
+               }
+               
+
+               .nav__link {
+                  font-family: @font2;
+                  .font(17px, 25.5px, #F6F8FC, 0.17px);
+                  &::after {
+                     content: "";
+                     display: block;
+                     width: 100%;
+                     height: 2px;
+                     background-color: #FFCA42;
+                     transform: scale(0);
+                     transition: all 0.5s;
+                  }
+
+                  &:hover {
+                     transition: color 0.5s ease-in 0s;
+                     color: #FFCA42;
+                  }
+                  &:hover::after {
+                     transition: transform 0.5s ease-in 0.2s;
+                     transform: scale(1);
+                  }
+               }
+            
+               .nav__icon {
+               }
+            }
+         }
+      }
+
+      .header__button {
+         .btns()
+      }
+   }
+}
+
+

@@ -1,0 +1,41 @@
+@font1: 'Cardo', serif;
+@font2: 'Inter', sans-serif;
+
+.font(@fs, @lh, @color, @ls) {
+   font-size: @fs;
+   line-height: @lh;
+   color: @color;
+   letter-spacing: @ls;
+}
+
+
+.btns(@bg:#FFCA42, @colors:#1B3764) {
+   width: 222px;
+   height: 66px;
+   line-height: 66px;
+   background: @bg;
+   border: 2px solid #FFCA42;
+   text-align: center;
+   .btn-link {
+      .font(19px, 29px, @colors, 0.56px);
+      font-family: @font1;
+      padding: 18px 52px;
+   }
+}
+
+.title(@left: 50%, @xx: -50%, @col:#FFCA42 ) {
+   font-family: @font1;
+   text-align: center;
+   .font(42px, 50px, #1B3764, 0em);
+   position: relative;
+   &::before {
+      position: absolute;
+      content: "";
+      bottom: -27px;
+      left: @left;
+      transform: translate(@xx , 0);
+      width: 50px;
+      height: 3px;
+      background: @col;
+   }
+}

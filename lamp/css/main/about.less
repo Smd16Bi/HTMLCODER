@@ -1,0 +1,134 @@
+@import "../var.less";
+
+.main__about {
+   background: #F5F8FC;
+   padding: 160px 0 190px 0;
+   .about__container {
+      display: flex;
+      align-items: flex-start;
+      padding: 0;
+      .about__decor {
+         flex: 1 1 50%;
+         justify-content: flex-start;
+         .decor__border {
+            height: 640px;
+            width: 545px;
+            border: 10px solid #FFCA42;
+            position: relative;
+            img {
+               position: absolute;
+               top: -40px;
+               left: -40px;
+            }
+         }
+      }
+      .about__author {
+         flex: 1 1 50%;
+         padding-left: 45px;
+         padding-top: 20px;
+         .author__title {
+            font-family: @font1;
+            .title(4%);
+            text-align: left;
+            margin-bottom: 59px;
+         }
+         .author__subTitle {
+            font-family: @font2;
+            .font(19px,34px,#969AA0,0em);
+            width: 559px;
+            margin-bottom: 32px;
+         }
+         .author__achievement {
+            width: 605px;
+            height: 98px;
+            display: flex;
+            &>*:not(:last-child) {
+               margin-right: 38px;
+            }
+
+            .achievement__item {
+               flex: 1 1 calc(100% / 3 - 38px * 2 / 3);
+              &:nth-child(1) {
+                 margin-left: 5px;
+                 padding-left: 10px;
+                 border-right: 1px solid #FFCA42;
+              }
+              &:nth-child(2) {
+                  border-right: 1px solid #FFCA42;
+              }
+               .achievement__item-title {
+                  font-family: @font1;
+                  .font(54px,77px,#1B3764,0em);
+               }
+               .achievement__item-subTitle {
+                  font-family: @font2;
+                  .font(17px,22px,#969AA0,0em);
+               }
+            }
+         }
+         .author__contact {
+            background: #1B3764;
+            width: 484px;
+            height: 161px;
+            margin-top: 55px;
+            padding: 15px 20px;
+            display: flex;
+            .contact__qr {
+               margin-right: 40px;
+            }
+            .contact__info {
+               padding-top: 22px;
+               .info-name {
+                  font-family: @font1;
+                  .font(22px,26px,#FFCA42,0em);
+                  margin-bottom: 12px;
+               }
+               a {
+                  font-family: @font2;
+                  .font(18px,29px,#B4C7E7,0.19px);
+                  margin-bottom: 5px;
+                  display: block;
+                  span {
+                     display: inline-block;
+                     margin-left: 10px;
+                  }
+               }
+               
+            }
+         }
+      }
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

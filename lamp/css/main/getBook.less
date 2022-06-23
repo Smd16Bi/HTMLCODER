@@ -1,0 +1,39 @@
+@import "../var.less";
+
+.main__getBook {
+   padding: 190px 0 135px 0;
+   background: #1B3764;
+
+   .getBook__container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0;
+      position: relative;
+      &::before {
+         position: absolute;
+         top: 0;
+         right: 0;
+         content: url("../../img/main/getBookDecor.png");
+         transform: translateY(-20%);
+      }
+      .getBook__title {
+         .title(6%);
+         color: #fff;
+         margin-bottom: 54px;
+         font-size: 45px
+      }
+      .getBook_subTitle {
+         .font(19px,29px, #B4C7E7, 0em);
+         font-family: @font2;
+         max-width: 539px;
+         margin-bottom: 27px;
+      }
+      .getBook-link {
+         .btns(#1B3764, #fff);
+      }
+   }
+}
+
+
+

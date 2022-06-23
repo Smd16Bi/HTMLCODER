@@ -1,0 +1,81 @@
+@import "../var.less";
+
+.main__books {
+   padding: 110px 0 150px 0;
+   .book__container {
+      .book__title {
+         .title();
+         margin-bottom: 88px;
+      }
+      .book__content {
+         display: flex;
+         align-items: flex-start;
+         &>*:not(:first-child){
+            padding-left: 10px;
+         }
+         .connect__book-item {
+            flex: 1 1 50%;
+            display: flex;
+            gap: 17px;
+            .book__item-decor {
+               // height: 382px;
+               // width: 285px;
+               margin-left: -10px;
+               img{
+                  max-width: 100%;
+                  max-height: 100%;
+               }
+            }
+            .book__item-body {
+               padding: 48px 0 27px 0;
+               font-family: @font1;
+               .book__item-title {
+                  .font(32px, 38px, #1B3764, 0.32px);
+                  margin-bottom: 7px;
+               }
+               .book__item-price {
+                  font-family: @font2;
+                  .font(21px, 33px, #FFCA42, 0em);
+                  margin-bottom: 17px;
+
+               }
+               .book__item-subTitle {
+                  .font(24px, 29px, #1B3764, 0em);
+                  margin-bottom: 13px;
+                  max-width: 287px;
+               }
+               .book__item-point {
+                  margin-bottom: 27px;
+                  .font(24px, 29px, #1B3764, 0em);
+                  span {
+                     display: inline-block;
+                     width: 16px;
+                     height: 16px;
+                     border-radius: 50%;
+                     margin-right: 10px;
+                     background: #FFCA42;
+                  }
+               }
+               .book__item-link {
+                  height: 66px;
+                  width: 206px;
+                  line-height: 66px;
+                  border: 2px solid #FFCA42;
+                  text-align: center;
+                  a{
+                     .font(19px, 29px, #1B3764, 0.37px);
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+
+
+
+
+
+
+

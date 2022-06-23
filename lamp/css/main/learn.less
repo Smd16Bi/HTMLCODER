@@ -1,0 +1,85 @@
+@import "../var.less";
+
+.main__learn {
+   padding: 136px 0 188px 0;
+   .learn__title {
+      .title();
+      margin-bottom: 116px;
+   }
+   .learn__container {
+      padding: 0;
+      display: flex;
+      .learn__content {
+         flex: 0 1 50%;
+         display: flex;
+         flex-direction: row;
+         flex-wrap: wrap;
+         padding-top: 30px;
+         &>*:not(:nth-child(2n)) {
+            margin-right: 30px;
+         };
+
+         &>*:nth-child(-n+2) {
+            // margin-bottom: 20px;
+         }
+         .learn__item {
+            flex: 1 1 303px;
+            height: 272px;
+            width: 303px;
+            background: #F4F8FF;
+            padding-left: 25px;
+            padding-top: 25px;
+            text-align: center;
+            // margin-bottom: 5px;
+            &:nth-child(1) .learn__item-subTitle {
+               max-width: 229px;
+            }
+            &:nth-child(2) .learn__item-subTitle{
+               max-width: 236px;
+            }
+            &:nth-child(3) .learn__item-subTitle{
+               max-width: 216px;
+            }
+            &:nth-child(4) .learn__item-subTitle{
+               max-width: 223px;
+            }
+            .learn__item-number {
+               width: 50px;
+               height: 50px;
+               border-radius: 50%;
+               background: #FFCA42;
+               margin-bottom: 30px;
+               .font(23px,50px,#1B3764,0em);
+               font-family: @font1;
+            }
+            .learn__item-subTitle {
+               .font(24px,34px,#1B3764,0em);
+               font-family: @font1;
+               text-align: left;
+
+            }
+         }
+      
+      }
+      .learn__decor {
+         flex: 0 1 50%;
+         padding-left: 90px;
+        .decor__learn{
+            height: 652px;
+            width: 555px;
+            border: 10px solid #FFCA42;         
+            position: relative;
+            &::before {
+               position: absolute;
+               top: -30px;
+               left: -25px;
+               content: url("../../img/main/decorLearn.png");
+            }   
+         }
+      }
+   }
+}
+
+
+
+

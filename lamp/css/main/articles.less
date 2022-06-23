@@ -1,0 +1,93 @@
+@import "../var.less";
+
+.main__articles {
+   margin-top: 150px;
+   background: #F4F8FF;
+   padding: 126px 0 150px 0px;
+   .articles__container {
+      padding: 0;
+      .articles__title {
+         .title();
+         margin-bottom: 96px;
+      }
+      .articles__content {
+         display: flex;
+         align-items: flex-start;
+         gap: 20px;
+         .articles__resources {
+            &:nth-child(1) > .resources__title {
+               max-width: 318px;
+            }
+            &:nth-child(2) > .resources__title {
+               max-width: 270px;
+            }
+            &:nth-child(3) > .resources__title {
+               max-width: 325px;
+            }
+            &:nth-child(1) > .resources__subTitle {
+               max-width: 359px;
+            }
+            &:nth-child(2) > .resources__subTitle {
+               max-width: 358px;
+            }
+            &:nth-child(3) > .resources__subTitle {
+               max-width: 323px;
+            }
+            background: #FFFFFF;
+            display: flex;
+            flex-direction: column;
+            width: 420px;
+            height: 622px;
+            &>*:not(:first-child) {
+               padding: 0 0 0 20px;
+            }
+            .resources__img {
+               width: 420px;
+               height: 350px;
+               margin-bottom: 25px;
+               img {
+                  max-width: 100%;
+               }
+            }
+            .resources__title {
+               font-family: @font1;
+               .font(24px,34px,#1B3764,0.24px);
+               margin-bottom: 19px;
+            }
+            .resources__subTitle {
+               font-family: @font2;
+               .font(19px,30px,#969AA0,0em);
+               margin-bottom: 11px;
+            }
+            .resources__link {
+               display: flex;
+               justify-content: space-between;
+               &-more {
+                  font-family: @font1;
+                  .font(19px,23px,#1B3764,0.38px);
+                  &:after {
+                     content: "";
+                     display: block;
+                     width: 94px;
+                     height: 2px;
+                     background: #1B3764;
+                     margin-top: 4px;
+                  }
+               }
+               &-date {
+                  font-family: @font2;
+                  .font(16px,26px,#1B3764,0em);
+                  padding-right: 30px;
+               }
+            }
+         }
+      }
+   }
+}
+
+
+
+
+
+
+

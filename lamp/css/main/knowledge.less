@@ -1,0 +1,99 @@
+@import "../var.less";
+.main__knowledge {
+   background: #F4F8FF;
+   padding: 70px 0 130px 0;
+
+   .knowledge__container {
+      padding: 0;
+      .knowledge__title {
+         .title();
+         margin-bottom: 96px;
+      }
+      .knowledge__content {
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         grid-template-rows: repeat(2, 1fr);
+         row-gap: 40px;
+         column-gap: 30px;
+         .knowledge__item {
+            background: #FFFFFF;
+            padding: 42px 0 46px 40px;
+            &:nth-child(1) .knowledge__item-subTitle {
+               max-width: 533px;
+            }
+            &:nth-child(2) .knowledge__item-subTitle{
+               max-width: 509px;
+            }
+            &:nth-child(3) .knowledge__item-subTitle{
+               max-width: 530px;
+            }
+            &:nth-child(4) .knowledge__item-subTitle{
+               max-width: 536px;
+            }
+            
+            .knowledge__item-title {
+               .font(24px,29px,#1B3764,0em);
+               font-family: @font1;
+               margin-bottom: 21px;
+            }
+            .knowledge__item-subTitle {
+               .font(19px,32px,#969AA0,0em);
+               font-family: @font2;
+               margin-bottom: 12px;
+               
+            }
+            .knowledge__item-param {
+               display: flex;
+               align-items: flex-start;
+               gap: 45px;
+               .knowledge__item-page,
+               .knowledge__item-length{
+                  .font(22px,31px,#1B3764,0em);
+                  font-family: @font1;
+                  &::before {
+                     content: "";
+                     display: inline-block;
+                     width: 16px;
+                     height: 16px;
+                     border-radius: 50%;
+                     background: #FFCA42;
+                     margin-right: 10px;
+                  }
+                  span {
+                     .font(17px,27px,#969AA0,0em);
+                     font-family: @font2;
+                     display: inline-block;
+                     margin-left: 10px; 
+                  }
+               }
+               // .knowledge__item-length {
+               //    .font(22px,31px,#1B3764,0em);
+               //    font-family: @font1;
+               // }
+            }
+         }
+      }
+      .knowledge__button {
+         .btns();
+         width: 429px;
+         margin: 68px auto 0;
+      }
+      .knowledge__question{
+         max-width: 331px;
+         margin: 40px auto 0;
+         .question__text {
+            text-align: center;
+            font-family: @font2;
+            .font(18px,29px,#969AA0,0em);
+
+            span {
+               .font(18px,29px,#1B3764,0.19px);
+            }
+         }
+      }
+   }
+}
+
+
+
+

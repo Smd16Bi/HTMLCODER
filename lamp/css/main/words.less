@@ -1,0 +1,105 @@
+@import "../var.less";
+
+
+.main__words {
+   .words__container {
+      padding: 0;
+      display: flex;
+      .words__introduce {
+         margin-top: 231px;
+         flex: 0 0 468px;
+         margin-right: 30px;
+         &-title {
+            .title(5%);
+            text-align: left;
+            max-width: 329px;
+            margin-bottom: 59px;
+         }
+         &-subTitle {
+            font-family: @font2;
+            .font(19px,34px,#969AA0,0em);
+            max-width: 435px;
+            margin-bottom: 27px;
+         }
+         &-rating {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            span {
+               margin-left: 10px;
+               font-family: @font1;
+               .font(22px,26px,#1B3764,0em);
+            }
+         }
+         &-overall {
+            font-family: @font2;
+            .font(18px,29px,#1B3764,0em);
+         }
+      }
+      
+      .words__word {
+         margin-top: 130px;
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         grid-template-rows: 292px ;
+         gap: 20px;
+         
+         .word__author {
+            &:nth-child(2){
+               margin-top: 153px;
+            }
+            &:nth-child(1)> .word__author-subTitle {
+               max-width: 290px;
+            }
+            &:nth-child(2)> .word__author-subTitle {
+               max-width: 300px;
+            }
+            &:nth-child(3)> .word__author-subTitle {
+               max-width: 303px;
+            }
+            background: #1B3764;
+            height: 292px;
+            width: 381px;
+            padding: 30px 0 0 35px;
+            &__ava {
+               display: flex;
+               align-items: center;
+               gap: 20px;
+               &-name {
+                  p {
+                     font-family: @font1;
+                     .font(24px,29px,#FFFFFF,0em);
+                     margin-bottom: 15px;
+                  }
+                  img {
+                     width: 76px;
+                     height: 13px;
+                  }
+               }
+            }
+            &-title {
+               font-family: @font1;
+               .font(22px,33px,#FFFFFF,0em);
+               margin: 20px 0 13px 0;
+            }
+            &-subTitle {
+               font-family: @font2;
+               .font(18px,29px,#B4C7E7,0em);
+               // &:nth-child(1) {
+               //    max-width: 290px;
+               // }
+               // &:nth-child(2) {
+               //    max-width: 300px;
+               // }
+               // &:nth-child(3) {
+               //    max-width: 303px;
+               // }
+            }
+         }
+         
+      }
+   }
+}
+
+
+
